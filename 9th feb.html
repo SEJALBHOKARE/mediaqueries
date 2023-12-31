@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+       
+        font-size: 40px;
+        
+        text-align: center;
+
+
+    }
+    body{
+        height: 100vh;
+        background-color: rgb(36, 224, 237);
+
+    }
+    .laptop_large,.laptop,.tab,.mobile{
+        font-size: 30px;
+        text-align: center;
+        display: none;
+
+    }
+   
+
+    
+@media screen and (min-width:425px){
+body{
+background-color: rgb(233, 56, 121);
+}
+.mobile{
+display: block;
+}
+
+}
+@media screen and (min-width:700px) {
+body{
+background-color: rgb(5, 255, 251)
+}
+.mobile{
+display: none;
+}
+.tab{
+display: block;
+}
+
+}
+@media screen and (min-width:1000px) {
+body{
+background-color: rgb(147, 126, 9);
+}
+.mobile{
+display: none;
+}
+.tab{
+display: none;
+}
+.laptop{
+display: block;
+}
+
+}
+@media screen and (min-width:1400px){
+body{
+background-color: rgb(54, 143, 6);
+}
+.mobile{
+display:none;
+}
+.tab{
+display: none;
+}
+.laptop{
+display: none;
+}
+.laptop_large{
+display: block;
+}
+} 
+        
+</style>  
+
+
+<body>
+    <h1>This is a media Query demo page</h1>
+        <p class="laptop_large">Screen size:1440px</p>
+        <p class="laptop">Screen size:1004px</p>
+        <p class="tab">Screen size:850px</p>
+        <p class="mobile">Screen size:400px</p>
+</body>
+
+
+</html>
